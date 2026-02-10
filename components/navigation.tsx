@@ -22,7 +22,7 @@ export function Navigation() {
         <div className="h-8 w-8 border border-primary/60 flex items-center justify-center">
           <div className="h-4 w-4 bg-primary/80" />
         </div>
-        <span className="font-serif text-lg tracking-tight">Studio</span>
+        <span className="font-serif text-lg tracking-tight">Your Name</span>
       </Link>
       <nav className="flex items-center gap-8" aria-label="Main navigation">
         {navLinks.map((link) => (

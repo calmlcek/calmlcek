@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { ExternalLink } from "lucide-react"
 
 interface ProjectCardProps {
   title: string
@@ -16,19 +15,13 @@ export function ProjectCard({
   title,
   description,
   tags,
-  link,
   year,
   location,
   image,
   category,
 }: ProjectCardProps) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="glow-card group block rounded-sm border border-border/50 bg-card overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-    >
+    <div className="glow-card group block rounded-sm border border-border/50 bg-card overflow-hidden">
       <div className="img-zoom relative aspect-[4/3]">
         <Image
           src={image || "/placeholder.svg"}
@@ -55,7 +48,6 @@ export function ProjectCard({
               {location}
             </span>
           </div>
-          <ExternalLink className="h-3.5 w-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0 mt-0.5" />
         </div>
         <h3 className="text-xl font-serif text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
           {title}
@@ -74,6 +66,6 @@ export function ProjectCard({
           ))}
         </div>
       </div>
-    </a>
+    </div>
   )
 }

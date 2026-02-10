@@ -9,10 +9,10 @@ export function Footer() {
             <div className="h-6 w-6 border border-primary/60 flex items-center justify-center">
               <div className="h-3 w-3 bg-primary/80" />
             </div>
-            <span className="font-serif text-sm text-foreground">Studio</span>
+            <span className="font-serif text-sm text-foreground">Your Name</span>
           </div>
           <p className="text-xs text-muted-foreground max-w-xs leading-relaxed">
-            Architecture rooted in context, materiality, and the human experience.
+            B.Arch candidate passionate about thoughtful, human-centered design.
           </p>
         </div>
         <div className="flex items-center gap-6">

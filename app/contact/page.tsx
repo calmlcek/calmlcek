@@ -7,8 +7,8 @@ import {
   Linkedin,
   Instagram,
   MapPin,
-  Phone,
   ExternalLink,
+  GraduationCap,
 } from "lucide-react"
 
 export default function ContactPage() {
@@ -26,11 +26,11 @@ export default function ContactPage() {
               </p>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight text-foreground leading-[1.1] text-balance max-w-3xl mb-4">
-              Start a Conversation
+              {"Let\u2019s Connect"}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-16">
               {
-                "Whether you\u2019re envisioning a new home, a commercial space, or a cultural landmark \u2014 every great project begins with a conversation. I\u2019d love to hear about yours."
+                "I\u2019m actively seeking internship and entry-level opportunities in architecture. If you\u2019re looking for a motivated designer who brings curiosity, technical skill, and studio discipline \u2014 I\u2019d love to hear from you."
               }
             </p>
 
@@ -39,11 +39,11 @@ export default function ContactPage() {
               <div className="flex flex-col gap-5">
                 <div className="rounded-sm border border-border/50 bg-card p-8">
                   <h2 className="text-xl font-serif text-foreground mb-6">
-                    Studio Contact
+                    Contact Details
                   </h2>
                   <div className="flex flex-col gap-5">
                     <a
-                      href="mailto:studio@example.com"
+                      href="mailto:yourname@university.edu"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-200">
@@ -54,28 +54,12 @@ export default function ContactPage() {
                           Email
                         </p>
                         <p className="text-sm text-foreground">
-                          studio@example.com
+                          yourname@university.edu
                         </p>
                       </div>
                     </a>
                     <a
-                      href="tel:+12125551234"
-                      className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
-                    >
-                      <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-200">
-                        <Phone className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-muted-foreground font-mono uppercase tracking-[0.2em]">
-                          Phone
-                        </p>
-                        <p className="text-sm text-foreground">
-                          +1 (212) 555-1234
-                        </p>
-                      </div>
-                    </a>
-                    <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/yourname"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -88,12 +72,12 @@ export default function ContactPage() {
                           LinkedIn
                         </p>
                         <p className="text-sm text-foreground">
-                          linkedin.com/in/architect
+                          linkedin.com/in/yourname
                         </p>
                       </div>
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://instagram.com/yourname.arch"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -106,7 +90,7 @@ export default function ContactPage() {
                           Instagram
                         </p>
                         <p className="text-sm text-foreground">
-                          @studio.architect
+                          @yourname.arch
                         </p>
                       </div>
                     </a>
@@ -116,10 +100,23 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-[10px] text-muted-foreground font-mono uppercase tracking-[0.2em]">
-                          Studio
+                          Location
                         </p>
                         <p className="text-sm text-foreground">
-                          New York, NY
+                          Your City, State
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4 text-muted-foreground">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                        <GraduationCap className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] text-muted-foreground font-mono uppercase tracking-[0.2em]">
+                          University
+                        </p>
+                        <p className="text-sm text-foreground">
+                          Your University
                         </p>
                       </div>
                     </div>
@@ -129,15 +126,15 @@ export default function ContactPage() {
                 {/* CTA */}
                 <div className="rounded-sm border border-primary/20 bg-primary/5 p-8">
                   <h3 className="text-lg font-serif text-foreground mb-2">
-                    {"Let\u2019s build something remarkable"}
+                    Available for internships
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                     {
-                      "I\u2019m currently accepting new commissions for residential, commercial, and cultural projects. Reach out to discuss your vision."
+                      "I\u2019m looking for hands-on opportunities to contribute to meaningful projects while learning from experienced practitioners. I bring strong software skills, a design-build mindset, and genuine enthusiasm for the craft."
                     }
                   </p>
                   <a
-                    href="mailto:studio@example.com"
+                    href="mailto:yourname@university.edu"
                     className="inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors duration-200"
                   >
                     <Mail className="h-4 w-4" />
@@ -165,8 +162,8 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    Professional experience, education, licensures,
-                    publications, and awards in architectural practice.
+                    Education, studio experience, technical skills,
+                    extracurriculars, and relevant coursework.
                   </p>
                   <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
                     <div className="text-center px-4">
@@ -205,8 +202,8 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    A curated collection of built work, competition entries,
-                    conceptual studies, and design process documentation.
+                    A curated selection of studio projects, competition entries,
+                    design-build work, and process documentation.
                   </p>
                   <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
                     <div className="text-center px-4">

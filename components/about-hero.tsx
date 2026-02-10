@@ -7,14 +7,14 @@ export function AboutHero() {
         <div className="flex items-center gap-4 mb-6">
           <div className="arch-line" />
           <p className="text-primary font-mono text-xs tracking-[0.25em] uppercase">
-            Architecture & Design
+            B.Arch Student
           </p>
         </div>
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif tracking-tight text-foreground leading-[1.05] text-balance max-w-5xl">
-          Shaping spaces that inspire and endure.
+          Designing spaces with purpose and intention.
         </h1>
         <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-          An architect driven by the belief that every structure tells a story. From concept sketches to built environments, I design spaces where materiality, light, and human experience converge.
+          {"An undergraduate architecture student exploring the intersection of spatial design, materiality, and human experience. Currently seeking internship opportunities to bring studio rigor to real-world practice."}
         </p>
         <div className="mt-14 flex items-center gap-3 text-muted-foreground">
           <ArrowDown className="h-4 w-4 animate-bounce" />

@@ -4,70 +4,70 @@ import { ProjectCard } from "@/components/project-card"
 
 const projects = [
   {
-    title: "Meridian Residence",
+    title: "The Threshold House",
     description:
-      "A cantilevered concrete and glass home that frames panoramic views of the Hudson Valley. The living spaces flow seamlessly into terraced gardens, blurring the boundary between interior and landscape.",
-    tags: ["Residential", "Concrete", "Glass", "LEED Gold"],
+      "A fourth-year design studio project exploring the concept of transitional space in single-family residential architecture. Focused on blurring boundaries between interior and landscape through interconnected courtyards.",
+    tags: ["Residential", "Studio Project", "Rhino", "Physical Model"],
     link: "#",
     year: "2025",
-    location: "Hudson Valley, NY",
+    location: "Design Studio IV",
     image: "/images/project-1.jpg",
-    category: "Residential",
+    category: "Studio",
   },
   {
-    title: "Atelier of Light",
+    title: "Civic Memory Center",
     description:
-      "A contemporary art museum with soaring double-height galleries washed in natural light. Rammed earth walls and polished concrete floors ground the ethereal volumes in tactile materiality.",
-    tags: ["Cultural", "Museum", "Rammed Earth", "Daylight Design"],
+      "A third-year studio project for a community archive and cultural center. The design uses rammed earth and mass timber to create a procession of galleries that guide visitors through layered narratives of local history.",
+    tags: ["Cultural", "Community", "Mass Timber", "Revit"],
     link: "#",
     year: "2024",
-    location: "Santa Fe, NM",
+    location: "Design Studio III",
     image: "/images/project-2.jpg",
-    category: "Cultural",
+    category: "Studio",
   },
   {
-    title: "Parallax Tower",
+    title: "Vertical Neighborhood",
     description:
-      "A 28-story mixed-use tower with a faceted glass curtain wall that shifts appearance throughout the day. The podium houses retail and public plazas that activate the streetscape.",
-    tags: ["Commercial", "High-Rise", "Mixed-Use", "Curtain Wall"],
+      "A competition entry reimagining high-density urban housing. The proposal stacks shared amenity courtyards at every fourth floor, creating sky-villages that foster community in a 20-story tower.",
+    tags: ["Competition", "Housing", "Urban", "Grasshopper"],
     link: "#",
     year: "2024",
-    location: "Brooklyn, NY",
+    location: "ACSA Student Competition",
     image: "/images/project-3.jpg",
-    category: "Commercial",
+    category: "Competition",
   },
   {
-    title: "Refuge Hotel & Spa",
+    title: "Adaptive Reuse: Textile Mill",
     description:
-      "A boutique hotel carved into a hillside, featuring exposed timber frames, rammed earth walls, and private courtyards. Each suite is oriented to capture morning light and mountain vistas.",
-    tags: ["Hospitality", "Timber", "Landscape", "Wellness"],
+      "A second-year project transforming an abandoned textile mill into a maker space and co-working hub. Preserved the existing industrial steel frame while inserting a new timber and glass volume.",
+    tags: ["Adaptive Reuse", "Mixed-Use", "AutoCAD", "Laser Cut Model"],
     link: "#",
     year: "2023",
-    location: "Aspen, CO",
+    location: "Design Studio II",
     image: "/images/project-4.jpg",
-    category: "Hospitality",
+    category: "Studio",
   },
   {
-    title: "Civic Library & Archive",
+    title: "Timber Pavilion",
     description:
-      "A public library with a dramatic cantilevered reading room that hovers above a landscaped civic plaza. Cross-laminated timber structure achieves warmth at an institutional scale.",
-    tags: ["Civic", "CLT Structure", "Public Space", "Archive"],
+      "A design-build project for a campus outdoor learning pavilion. Led fabrication of a parametrically designed timber lattice structure using CNC-milled joints and traditional Japanese joinery techniques.",
+    tags: ["Design-Build", "Fabrication", "Parametric", "Grasshopper"],
     link: "#",
     year: "2023",
-    location: "Portland, OR",
+    location: "Design-Build Elective",
     image: "/images/project-5.jpg",
-    category: "Civic",
+    category: "Fabrication",
   },
   {
-    title: "Verdant Commons",
+    title: "Eco-Housing Prototype",
     description:
-      "A sustainable multi-family housing complex organized around shared courtyards and green rooftops. Passive House certified with integrated photovoltaic facades and rainwater harvesting.",
-    tags: ["Residential", "Passive House", "Net-Zero", "Community"],
+      "A sustainability-focused studio project designing a net-zero modular housing prototype for climate-vulnerable coastal communities. Explored passive ventilation strategies and locally-sourced materials.",
+    tags: ["Sustainable", "Modular", "Net-Zero", "Enscape"],
     link: "#",
     year: "2022",
-    location: "Cambridge, MA",
+    location: "Environmental Systems Studio",
     image: "/images/project-6.jpg",
-    category: "Sustainable",
+    category: "Research",
   },
 ]
 
@@ -86,12 +86,13 @@ export default function ProjectsPage() {
               </p>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight text-foreground leading-[1.1] text-balance max-w-3xl mb-4">
-              Built & Envisioned
+              Studio & Beyond
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-16">
-              A curated selection of projects spanning residential, cultural,
-              commercial, and civic architecture. Each designed with deep respect
-              for site, sustainability, and the people who inhabit these spaces.
+              A curated selection of academic studio projects, design
+              competitions, and research work. Each project reflects a
+              commitment to thoughtful design thinking, rigorous process, and
+              material exploration.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {projects.map((project) => (

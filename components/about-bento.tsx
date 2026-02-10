@@ -1,22 +1,33 @@
 import { BentoGrid, BentoItem } from "@/components/bento-grid"
 import {
   Compass,
-  Ruler,
+  PencilRuler,
   Layers,
-  Sun,
+  GraduationCap,
   MapPin,
-  Award,
+  Wrench,
 } from "lucide-react"
 
-const expertise = [
-  "Residential",
-  "Commercial",
-  "Cultural",
-  "Hospitality",
-  "Sustainable Design",
-  "Urban Planning",
-  "Interior Architecture",
-  "Adaptive Reuse",
+const skills = [
+  "Rhino / Grasshopper",
+  "AutoCAD",
+  "Revit",
+  "SketchUp",
+  "Adobe Suite",
+  "V-Ray / Enscape",
+  "Laser Cutting",
+  "3D Printing",
+  "Physical Model Making",
+  "Hand Drafting",
+]
+
+const coursework = [
+  "Design Studio I-IV",
+  "Architectural History",
+  "Structures & Tectonics",
+  "Environmental Systems",
+  "Digital Fabrication",
+  "Urban Design",
 ]
 
 export function AboutBento() {
@@ -38,54 +49,56 @@ export function AboutBento() {
                   <Compass className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-serif text-foreground">
-                  Design Philosophy
+                  Design Approach
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed text-base">
                 {
-                  "I believe architecture is the art of organizing space to serve the human spirit. My work begins with deep listening \u2014 understanding the site, the client, and the community \u2014 before a single line is drawn."
+                  "I approach architecture as the careful choreography of space, light, and material. My studio work is driven by a curiosity for how people inhabit and move through environments \u2014 and how design can elevate those everyday experiences."
                 }
               </p>
               <p className="text-muted-foreground leading-relaxed text-base mt-4">
                 {
-                  "Every project is an opportunity to harmonize form with function, to let natural light sculpt interiors, and to choose materials that age with grace. I design structures that are not monuments to ego, but quiet celebrations of place and purpose."
+                  "From site analysis to final presentation, I bring a process grounded in research, iterative model-making, and a deep respect for context. I\u2019m drawn to projects that challenge conventional thinking about program, structure, and sustainability."
                 }
               </p>
             </div>
             <div className="mt-8 flex items-center gap-3">
               <div className="h-2.5 w-2.5 bg-primary animate-pulse" />
               <span className="text-xs text-muted-foreground font-mono tracking-wider uppercase">
-                Accepting new commissions
+                Seeking summer 2026 internships
               </span>
             </div>
           </BentoItem>
 
-          {/* Experience card */}
+          {/* Education card */}
           <BentoItem className="flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
-                  <Ruler className="h-5 w-5 text-primary" />
+                  <GraduationCap className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-serif text-foreground">
-                  Experience
+                  Education
                 </h3>
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {
-                  "From boutique residences to cultural institutions, each project has deepened my understanding of how spaces shape behavior and emotion."
+                  "Pursuing a Bachelor of Architecture with a focus on sustainable design and digital fabrication."
                 }
               </p>
             </div>
             <div className="mt-6">
-              <p className="text-5xl font-serif text-foreground">12+</p>
+              <p className="text-xl font-serif text-foreground">
+                B.Arch Candidate
+              </p>
               <p className="text-xs text-muted-foreground uppercase tracking-[0.15em] mt-1">
-                Years of Practice
+                Your University, Class of 2027
               </p>
             </div>
           </BentoItem>
 
-          {/* Materiality card */}
+          {/* Interests card */}
           <BentoItem className="flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4">
@@ -93,27 +106,29 @@ export function AboutBento() {
                   <Layers className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-serif text-foreground">
-                  Materiality
+                  Interests
                 </h3>
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {
-                  "Concrete, timber, stone, steel \u2014 I select materials not just for aesthetics, but for how they feel under the hand and weather over decades."
+                  "Parametric design, adaptive reuse, mass timber construction, and the relationship between architecture and social equity."
                 }
               </p>
             </div>
           </BentoItem>
 
-          {/* Expertise card */}
+          {/* Skills & Tools card */}
           <BentoItem className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
-                <Award className="h-5 w-5 text-primary" />
+                <Wrench className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-lg font-serif text-foreground">Expertise</h3>
+              <h3 className="text-lg font-serif text-foreground">
+                Skills & Tools
+              </h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {expertise.map((item) => (
+              {skills.map((item) => (
                 <span
                   key={item}
                   className="rounded-sm border border-border bg-secondary px-3 py-1.5 text-xs font-mono tracking-wider text-secondary-foreground uppercase"
@@ -133,26 +148,36 @@ export function AboutBento() {
               <h3 className="text-lg font-serif text-foreground">Based In</h3>
             </div>
             <div>
-              <p className="text-2xl font-serif text-foreground">New York</p>
+              <p className="text-2xl font-serif text-foreground">Your City</p>
               <p className="text-sm text-muted-foreground mt-1">
-                Designing globally from the Northeast
+                Open to relocating for internships
               </p>
             </div>
           </BentoItem>
 
-          {/* Light & space card */}
+          {/* Coursework & beyond */}
           <BentoItem className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
-                <Sun className="h-5 w-5 text-primary" />
+                <PencilRuler className="h-5 w-5 text-primary" />
               </div>
               <h3 className="text-lg font-serif text-foreground">
-                Beyond the Blueprint
+                Relevant Coursework
               </h3>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <div className="flex flex-wrap gap-2 mb-6">
+              {coursework.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-sm border border-border bg-secondary px-3 py-1.5 text-xs font-mono tracking-wider text-secondary-foreground uppercase"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+            <p className="text-muted-foreground leading-relaxed text-sm">
               {
-                "When I step away from the drafting table, I\u2019m photographing vernacular architecture, visiting construction sites for the pure joy of watching a building rise, or sketching in travel journals. I find that the best design ideas come from observing the world \u2014 how light falls on a weathered wall, how a narrow alley creates unexpected intimacy."
+                "Outside the studio, I photograph vernacular architecture, volunteer with community design-build organizations, and sketch constantly \u2014 on napkins, receipts, and the margins of my lecture notes."
               }
             </p>
           </BentoItem>
