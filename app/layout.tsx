@@ -1,14 +1,18 @@
 import React from "react"
 import type { Metadata, Viewport } from "next"
-import { DM_Sans, DM_Serif_Display, JetBrains_Mono } from "next/font/google"
+import {
+  Work_Sans,
+  Cormorant_Garamond,
+  JetBrains_Mono,
+} from "next/font/google"
 
 import "./globals.css"
 
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" })
-const dmSerif = DM_Serif_Display({
-  weight: "400",
+const workSans = Work_Sans({ subsets: ["latin"], variable: "--font-work-sans" })
+const cormorant = Cormorant_Garamond({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-dm-serif",
+  variable: "--font-cormorant",
 })
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -16,13 +20,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Architecture Portfolio",
+  title: "Calvin Mlcek - Architecture Portfolio",
   description:
-    "A premium portfolio showcasing architectural design, spatial innovation, and built environments.",
+    "Undergraduate architecture portfolio showcasing studio projects, design work, and spatial exploration.",
 }
 
 export const viewport: Viewport = {
-  themeColor: "#0c0a08",
+  themeColor: "#fafafa",
 }
 
 export default function RootLayout({
@@ -33,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${dmSerif.variable} ${jetbrainsMono.variable}`}
+      className={`${workSans.variable} ${cormorant.variable} ${jetbrainsMono.variable}`}
     >
       <body className="font-sans antialiased bg-background text-foreground">
         {children}

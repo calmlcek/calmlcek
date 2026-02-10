@@ -11,14 +11,14 @@ export function AboutHero() {
             <div className="flex items-center gap-4 mb-6">
               <div className="arch-line" />
               <p className="text-primary font-mono text-xs tracking-[0.25em] uppercase">
-                Ohio State University Architecture Student
+                B. Arch Student
               </p>
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif tracking-tight text-foreground leading-[1.05] text-balance">
               Calvin Mlcek
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              {"Sample bio"}
+              {"Third-year architecture student at The Ohio State University focused on the relationship between built and lived environment. Based in Columbus and Toledo Ohio."}
             </p>
             <div className="mt-14 flex items-center gap-3 text-muted-foreground">
               <ArrowDown className="h-4 w-4 animate-bounce" />
@@ -32,8 +32,8 @@ export function AboutHero() {
           <div className="shrink-0 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Decorative border frame offset behind the image */}
-              <div className="absolute -top-3 -right-3 w-full h-full border border-primary/30 rounded-sm" />
-              <div className="relative w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-96 overflow-hidden rounded-sm border border-border/60">
+              <div className="absolute -top-3 -right-3 w-full h-full border border-primary/25 rounded-sm" />
+              <div className="relative w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-96 overflow-hidden rounded-sm border border-border shadow-lg">
                 <Image
                   src="/images/headshot.jpg"
                   alt="Calvin Mlcek - Architecture student headshot"
@@ -44,8 +44,8 @@ export function AboutHero() {
                 />
               </div>
               {/* Small accent detail */}
-              <div className="absolute -bottom-2 -left-2 h-6 w-6 border border-primary/50 flex items-center justify-center">
-                <div className="h-2 w-2 bg-primary/60" />
+              <div className="absolute -bottom-2 -left-2 h-6 w-6 border border-foreground/15 flex items-center justify-center bg-background">
+                <div className="h-2 w-2 bg-primary" />
               </div>
             </div>
           </div>

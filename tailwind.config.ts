@@ -63,8 +63,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-dm-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-work-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-cormorant)', 'Georgia', 'serif'],
         mono: ['var(--font-jetbrains-mono)', 'monospace'],
       },
       borderRadius: {

@@ -39,7 +39,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-5">
                 <div className="rounded-sm border border-border/50 bg-card p-8">
                   <h2 className="text-xl font-serif text-foreground mb-6">
-                    Contact Details
+                    Contact Information
                   </h2>
                   <div className="flex flex-col gap-5">
                     <a
@@ -54,12 +54,12 @@ export default function ContactPage() {
                           Email
                         </p>
                         <p className="text-sm text-foreground">
-                          yourname@university.edu
+                          mlcek.2@buckeyemail.osu.edu
                         </p>
                       </div>
                     </a>
                     <a
-                      href="https://linkedin.com/in/yourname"
+                      href="https://www.linkedin.com/in/calvin-mlcek-565580387/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -72,12 +72,12 @@ export default function ContactPage() {
                           LinkedIn
                         </p>
                         <p className="text-sm text-foreground">
-                          linkedin.com/in/yourname
+                          https://www.linkedin.com/in/calvin-mlcek-565580387/
                         </p>
                       </div>
                     </a>
                     <a
-                      href="https://instagram.com/yourname.arch"
+                      href="https://instagram.com/calvin_mlcek_architecture"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -90,7 +90,7 @@ export default function ContactPage() {
                           Instagram
                         </p>
                         <p className="text-sm text-foreground">
-                          @yourname.arch
+                          @calvin_mlcek_architecture
                         </p>
                       </div>
                     </a>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                           Location
                         </p>
                         <p className="text-sm text-foreground">
-                          Your City, State
+                          Columbus, Ohio
                         </p>
                       </div>
                     </div>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                           University
                         </p>
                         <p className="text-sm text-foreground">
-                          Your University
+                          The Ohio State University
                         </p>
                       </div>
                     </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h2 className="text-xl font-serif text-foreground">
-                        Resume / CV
+                        Resume
                       </h2>
                       <p className="text-[10px] text-muted-foreground font-mono tracking-[0.15em] uppercase">
                         PDF Document
@@ -162,8 +162,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    Education, studio experience, technical skills,
-                    extracurriculars, and relevant coursework.
+                    Education, Professional Experience, Activities & Involvement, and Technical Skills.
                   </p>
                   <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
                     <div className="text-center px-4">
@@ -202,7 +201,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    A curated selection of studio projects, competition entries,
+                    A curated selection of studio projects, personal projects,
                     design-build work, and process documentation.
                   </p>
                   <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
