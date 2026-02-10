@@ -1,22 +1,21 @@
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="relative z-10 border-t border-border/50 px-6 py-10 md:px-12 lg:px-20">
-      <div className="mx-auto max-w-7xl flex flex-col items-center gap-6 md:flex-row md:justify-between">
-        <p className="text-sm text-muted-foreground">
-          {"Built with precision and care."}
-        </p>
-        <div className="flex items-center gap-5">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors duration-200"
-            aria-label="GitHub"
-          >
-            <Github className="h-5 w-5" />
-          </a>
+    <footer className="relative z-10 border-t border-border/40 px-6 py-12 md:px-12 lg:px-20">
+      <div className="mx-auto max-w-7xl flex flex-col gap-8 md:flex-row md:justify-between md:items-end">
+        <div>
+          <div className="flex items-center gap-3 mb-3">
+            <div className="h-6 w-6 border border-primary/60 flex items-center justify-center">
+              <div className="h-3 w-3 bg-primary/80" />
+            </div>
+            <span className="font-serif text-sm text-foreground">Studio</span>
+          </div>
+          <p className="text-xs text-muted-foreground max-w-xs leading-relaxed">
+            Architecture rooted in context, materiality, and the human experience.
+          </p>
+        </div>
+        <div className="flex items-center gap-6">
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -24,14 +23,23 @@ export function Footer() {
             className="text-muted-foreground hover:text-primary transition-colors duration-200"
             aria-label="LinkedIn"
           >
-            <Linkedin className="h-5 w-5" />
+            <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="mailto:hello@example.com"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            aria-label="Instagram"
+          >
+            <Instagram className="h-4 w-4" />
+          </a>
+          <a
+            href="mailto:studio@example.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-200"
             aria-label="Email"
           >
-            <Mail className="h-5 w-5" />
+            <Mail className="h-4 w-4" />
           </a>
         </div>
       </div>

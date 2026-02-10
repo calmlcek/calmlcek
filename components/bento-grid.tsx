@@ -18,8 +18,8 @@ export function BentoItem({ children, className }: BentoItemProps) {
   return (
     <div
       className={cn(
-        "rounded-lg border border-border/60 bg-card p-6 md:p-8 transition-colors duration-300",
-        className
+        "rounded-sm border border-border/50 bg-card p-6 md:p-8 transition-colors duration-300 hover:border-border/80",
+        className,
       )}
     >
       {children}

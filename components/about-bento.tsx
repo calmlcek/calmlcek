@@ -1,44 +1,62 @@
 import { BentoGrid, BentoItem } from "@/components/bento-grid"
-import { Code2, Layers, Palette, Zap, Globe, Coffee } from "lucide-react"
+import {
+  Compass,
+  Ruler,
+  Layers,
+  Sun,
+  MapPin,
+  Award,
+} from "lucide-react"
 
-const skills = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Tailwind CSS",
-  "PostgreSQL",
-  "Figma",
+const expertise = [
+  "Residential",
+  "Commercial",
+  "Cultural",
+  "Hospitality",
+  "Sustainable Design",
+  "Urban Planning",
+  "Interior Architecture",
+  "Adaptive Reuse",
 ]
 
 export function AboutBento() {
   return (
     <section className="px-6 md:px-12 lg:px-20 pb-24">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground mb-8">
-          At a glance
-        </h2>
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-xl font-serif tracking-tight text-foreground">
+            At a glance
+          </h2>
+          <div className="flex-1 h-px bg-border/60" />
+        </div>
         <BentoGrid className="lg:grid-rows-3">
-          {/* Large intro card */}
+          {/* Large philosophy card */}
           <BentoItem className="lg:col-span-2 lg:row-span-2 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                  <Code2 className="h-5 w-5 text-primary" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                  <Compass className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">About Me</h3>
+                <h3 className="text-lg font-serif text-foreground">
+                  Design Philosophy
+                </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed text-base">
-                {"I'm a developer who thrives at the intersection of design and engineering. With years of experience building for the web, I focus on creating interfaces that are not only beautiful but performant, accessible, and thoughtfully crafted."}
+                {
+                  "I believe architecture is the art of organizing space to serve the human spirit. My work begins with deep listening \u2014 understanding the site, the client, and the community \u2014 before a single line is drawn."
+                }
               </p>
               <p className="text-muted-foreground leading-relaxed text-base mt-4">
-                {"My approach combines clean code with meticulous attention to detail, ensuring every pixel serves a purpose. I believe great software should feel effortless to use."}
+                {
+                  "Every project is an opportunity to harmonize form with function, to let natural light sculpt interiors, and to choose materials that age with grace. I design structures that are not monuments to ego, but quiet celebrations of place and purpose."
+                }
               </p>
             </div>
             <div className="mt-8 flex items-center gap-3">
-              <div className="h-3 w-3 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm text-muted-foreground font-mono">Available for new projects</span>
+              <div className="h-2.5 w-2.5 bg-primary animate-pulse" />
+              <span className="text-xs text-muted-foreground font-mono tracking-wider uppercase">
+                Accepting new commissions
+              </span>
             </div>
           </BentoItem>
 
@@ -46,49 +64,61 @@ export function AboutBento() {
           <BentoItem className="flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                  <Layers className="h-5 w-5 text-primary" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                  <Ruler className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Experience</h3>
+                <h3 className="text-lg font-serif text-foreground">
+                  Experience
+                </h3>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {"Built products across agencies, startups, and enterprise — from design systems to full-stack applications."}
+                {
+                  "From boutique residences to cultural institutions, each project has deepened my understanding of how spaces shape behavior and emotion."
+                }
               </p>
             </div>
-            <p className="text-4xl font-bold text-foreground mt-6 font-mono">5+</p>
-            <p className="text-xs text-muted-foreground uppercase tracking-wider">Years of Experience</p>
+            <div className="mt-6">
+              <p className="text-5xl font-serif text-foreground">12+</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-[0.15em] mt-1">
+                Years of Practice
+              </p>
+            </div>
           </BentoItem>
 
-          {/* Design card */}
+          {/* Materiality card */}
           <BentoItem className="flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                  <Palette className="h-5 w-5 text-primary" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                  <Layers className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Design-Driven</h3>
+                <h3 className="text-lg font-serif text-foreground">
+                  Materiality
+                </h3>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {"I believe design and development are inseparable. Every project starts with understanding the user's needs."}
+                {
+                  "Concrete, timber, stone, steel \u2014 I select materials not just for aesthetics, but for how they feel under the hand and weather over decades."
+                }
               </p>
             </div>
           </BentoItem>
 
-          {/* Skills card */}
+          {/* Expertise card */}
           <BentoItem className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                <Zap className="h-5 w-5 text-primary" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                <Award className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">Tech Stack</h3>
+              <h3 className="text-lg font-serif text-foreground">Expertise</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
+              {expertise.map((item) => (
                 <span
-                  key={skill}
-                  className="rounded-md border border-border bg-secondary px-3 py-1.5 text-sm font-mono text-secondary-foreground"
+                  key={item}
+                  className="rounded-sm border border-border bg-secondary px-3 py-1.5 text-xs font-mono tracking-wider text-secondary-foreground uppercase"
                 >
-                  {skill}
+                  {item}
                 </span>
               ))}
             </div>
@@ -97,27 +127,33 @@ export function AboutBento() {
           {/* Location card */}
           <BentoItem className="flex flex-col justify-between">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                <Globe className="h-5 w-5 text-primary" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                <MapPin className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">Location</h3>
+              <h3 className="text-lg font-serif text-foreground">Based In</h3>
             </div>
             <div>
-              <p className="text-2xl font-bold text-foreground">Remote</p>
-              <p className="text-sm text-muted-foreground mt-1">Based worldwide, building globally</p>
+              <p className="text-2xl font-serif text-foreground">New York</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Designing globally from the Northeast
+              </p>
             </div>
           </BentoItem>
 
-          {/* Interests card */}
+          {/* Light & space card */}
           <BentoItem className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
-                <Coffee className="h-5 w-5 text-primary" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5">
+                <Sun className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">Beyond Code</h3>
+              <h3 className="text-lg font-serif text-foreground">
+                Beyond the Blueprint
+              </h3>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              {"When I'm not coding, you'll find me exploring new coffee shops, reading about design systems, contributing to open-source, or planning my next adventure. I believe the best ideas come from a well-rounded perspective."}
+              {
+                "When I step away from the drafting table, I\u2019m photographing vernacular architecture, visiting construction sites for the pure joy of watching a building rise, or sketching in travel journals. I find that the best design ideas come from observing the world \u2014 how light falls on a weathered wall, how a narrow alley creates unexpected intimacy."
+              }
             </p>
           </BentoItem>
         </BentoGrid>
