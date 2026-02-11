@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, FileText, Loader2, Trash2, Upload } from "lucide-react"
 
 const PROJECT_SLUGS = [
-  { slug: "the-threshold-house", title: "The Threshold House" },
+  { slug: "the-threshold-house", title: "Tube Town" },
   { slug: "civic-memory-center", title: "Civic Memory Center" },
   { slug: "vertical-neighborhood", title: "Vertical Neighborhood" },
   { slug: "adaptive-reuse-textile-mill", title: "Adaptive Reuse: Textile Mill" },

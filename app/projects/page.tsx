@@ -8,15 +8,15 @@ import { ProjectPdfDialog } from "@/components/project-pdf-dialog"
 
 const projects = [
   {
-    title: "The Threshold House",
+    title: "Tube Town",
     description:
-      "A fourth-year design studio project exploring the concept of transitional space in single-family residential architecture. Focused on blurring boundaries between interior and landscape through interconnected courtyards.",
-    tags: ["Residential", "Studio Project", "Rhino", "Physical Model"],
+      "Tube Town is a second-year group pavilion project built from reusable tube-based materials that create a playful, walkable structure. It focuses on community interaction, hands-on assembly, and collective building as part of the design process.",
+    tags: ["Community", "Built", "Group", "Physical Model"],
     slug: "the-threshold-house",
     year: "2025",
-    location: "Design Studio IV",
+    location: "Design Studio II",
     image: "/images/project-1.jpg",
-    category: "Studio",
+    category: "Built",
   },
   {
     title: "Civic Memory Center",
