@@ -58,7 +58,7 @@ export function ProjectPdfDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl h-[90vh] flex flex-col p-0 gap-0 bg-background border-border">
+      <DialogContent className="max-w-5xl p-0 gap-0 overflow-hidden [display:flex] flex-col h-[90vh]">
         <DialogHeader className="px-6 pt-6 pb-4 border-b border-border shrink-0">
           <DialogTitle className="text-xl font-serif text-foreground">
             {projectTitle}
@@ -68,7 +68,7 @@ export function ProjectPdfDialog({
           </DialogDescription>
         </DialogHeader>
 
-        <div className="flex-1 min-h-0">
+        <div className="flex-1 min-h-0 overflow-hidden">
           {loading ? (
             <div className="flex flex-col items-center justify-center h-full gap-3">
               <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
