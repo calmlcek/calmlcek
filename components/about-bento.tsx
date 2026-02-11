@@ -24,7 +24,7 @@ const skills = [
   "Zünd",
   "Physical Model Making",
   "Hand Drafting",
-  "Photography",
+  "Photography", "Web Design",
 ]
 
 export function AboutBento() {
