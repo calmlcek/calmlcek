@@ -1,7 +1,7 @@
 Place your project PDF files here with these filenames:
 
 - tube-town.pdf
-- civic-memory-center.pdf
+- möbius-branch-library.pdf
 - vertical-neighborhood.pdf
 - adaptive-reuse-textile-mill.pdf
 - timber-pavilion.pdf
