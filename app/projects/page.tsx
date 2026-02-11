@@ -23,7 +23,7 @@ const projects = [
     description:
       "As a second-year studio project, the Möbius Branch Library emphasizes conceptual development, spatial organization, and circulation over highly technical construction detailing. The project reflects an intermediate level of architectural study, focusing on form, program relationships, and public experience to explore how design supports community use.",
     tags: ["Cultural", "Community", "Geometry", "Rhino", "Physical Model"],
-    pdf: "/pdfs/möbius-branch-library.pdf",
+    pdf: "/pdfs/mobius-branch-library.pdf",
     year: "2025",
     location: "Design Studio II",
     image: "/images/project-2.jpg",
