@@ -1,6 +1,10 @@
+"use client"
+
+import { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ProjectCard } from "@/components/project-card"
+import { ProjectPdfDialog } from "@/components/project-pdf-dialog"
 
 const projects = [
   {
@@ -8,7 +12,7 @@ const projects = [
     description:
       "A fourth-year design studio project exploring the concept of transitional space in single-family residential architecture. Focused on blurring boundaries between interior and landscape through interconnected courtyards.",
     tags: ["Residential", "Studio Project", "Rhino", "Physical Model"],
-    link: "#",
+    slug: "the-threshold-house",
     year: "2025",
     location: "Design Studio IV",
     image: "/images/project-1.jpg",
@@ -19,7 +23,7 @@ const projects = [
     description:
       "A third-year studio project for a community archive and cultural center. The design uses rammed earth and mass timber to create a procession of galleries that guide visitors through layered narratives of local history.",
     tags: ["Cultural", "Community", "Mass Timber", "Revit"],
-    link: "#",
+    slug: "civic-memory-center",
     year: "2024",
     location: "Design Studio III",
     image: "/images/project-2.jpg",
@@ -30,7 +34,7 @@ const projects = [
     description:
       "A competition entry reimagining high-density urban housing. The proposal stacks shared amenity courtyards at every fourth floor, creating sky-villages that foster community in a 20-story tower.",
     tags: ["Competition", "Housing", "Urban", "Grasshopper"],
-    link: "#",
+    slug: "vertical-neighborhood",
     year: "2024",
     location: "ACSA Student Competition",
     image: "/images/project-3.jpg",
@@ -41,7 +45,7 @@ const projects = [
     description:
       "A second-year project transforming an abandoned textile mill into a maker space and co-working hub. Preserved the existing industrial steel frame while inserting a new timber and glass volume.",
     tags: ["Adaptive Reuse", "Mixed-Use", "AutoCAD", "Laser Cut Model"],
-    link: "#",
+    slug: "adaptive-reuse-textile-mill",
     year: "2023",
     location: "Design Studio II",
     image: "/images/project-4.jpg",
@@ -52,7 +56,7 @@ const projects = [
     description:
       "A design-build project for a campus outdoor learning pavilion. Led fabrication of a parametrically designed timber lattice structure using CNC-milled joints and traditional Japanese joinery techniques.",
     tags: ["Design-Build", "Fabrication", "Parametric", "Grasshopper"],
-    link: "#",
+    slug: "timber-pavilion",
     year: "2023",
     location: "Design-Build Elective",
     image: "/images/project-5.jpg",
@@ -63,7 +67,7 @@ const projects = [
     description:
       "A sustainability-focused studio project designing a net-zero modular housing prototype for climate-vulnerable coastal communities. Explored passive ventilation strategies and locally-sourced materials.",
     tags: ["Sustainable", "Modular", "Net-Zero", "Enscape"],
-    link: "#",
+    slug: "eco-housing-prototype",
     year: "2022",
     location: "Environmental Systems Studio",
     image: "/images/project-6.jpg",
@@ -72,6 +76,16 @@ const projects = [
 ]
 
 export default function ProjectsPage() {
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null)
+  const [dialogOpen, setDialogOpen] = useState(false)
+
+  function handleProjectClick(project: (typeof projects)[0]) {
+    setSelectedProject(project)
+    setDialogOpen(true)
+  }
+
   return (
     <>
       <div className="grain-overlay" aria-hidden="true" />
@@ -96,13 +110,27 @@ export default function ProjectsPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {projects.map((project) => (
-                <ProjectCard key={project.title} {...project} />
+                <ProjectCard
+                  key={project.title}
+                  {...project}
+                  onClick={() => handleProjectClick(project)}
+                />
               ))}
             </div>
           </div>
         </main>
         <Footer />
       </div>
+
+      {selectedProject && (
+        <ProjectPdfDialog
+          open={dialogOpen}
+          onOpenChange={setDialogOpen}
+          projectTitle={selectedProject.title}
+          projectSlug={selectedProject.slug}
+          projectDescription={selectedProject.description}
+        />
+      )}
     </>
   )
 }

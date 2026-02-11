@@ -1,32 +1,32 @@
 import Image from "next/image"
-import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
-  slug: string
   year: string
   location: string
   image: string
   category: string
+  onClick?: () => void
 }
 
 export function ProjectCard({
   title,
   description,
   tags,
-  slug,
   year,
   location,
   image,
   category,
+  onClick,
 }: ProjectCardProps) {
   return (
-    <Link
-      href={`/projects/${slug}`}
-      className="glow-card group block rounded-sm border border-border bg-card overflow-hidden shadow-sm"
+    <button
+      type="button"
+      onClick={onClick}
+      className="glow-card group block rounded-sm border border-border bg-card overflow-hidden shadow-sm text-left w-full"
     >
       <div className="img-zoom relative aspect-[4/3]">
         <Image
@@ -77,6 +77,6 @@ export function ProjectCard({
           ))}
         </div>
       </div>
-    </Link>
+    </button>
   )
 }
