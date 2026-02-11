@@ -10,6 +10,7 @@ interface ProjectCardProps {
   image: string
   category: string
   onClick?: () => void
+  priority?: boolean
 }
 
 export function ProjectCard({
@@ -21,6 +22,7 @@ export function ProjectCard({
   image,
   category,
   onClick,
+  priority = false,
 }: ProjectCardProps) {
   return (
     <button
@@ -35,6 +37,8 @@ export function ProjectCard({
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={priority}
+          loading={priority ? "eager" : "lazy"}
         />
         <div className="absolute inset-0 bg-foreground/5 group-hover:bg-foreground/0 transition-colors duration-500" />
         <div className="absolute top-4 left-4">
