@@ -113,7 +113,7 @@ export default function ProjectsPage() {
                 <ProjectCard
                   key={project.title}
                   {...project}
-                  priority={index === 0}
+                  priority={index < 3}
                   onClick={() => handleProjectClick(project)}
                 />
               ))}
