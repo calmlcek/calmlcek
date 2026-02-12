@@ -43,7 +43,7 @@ export default function ContactPage() {
                   </h2>
                   <div className="flex flex-col gap-5">
                     <a
-                      href="mailto:yourname@university.edu"
+                      href="mailto:mlcek.2@buckeyemail.osu.edu"
                       className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors duration-200 group"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-primary/20 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-200">
@@ -134,7 +134,7 @@ export default function ContactPage() {
                     }
                   </p>
                   <a
-                    href="mailto:yourname@university.edu"
+                    href="mailto:mlcek.2@buckeyemail.osu.edu"
                     className="inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors duration-200"
                   >
                     <Mail className="h-4 w-4" />

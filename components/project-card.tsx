@@ -1,32 +1,34 @@
 import Image from "next/image"
-import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
-  slug: string
   year: string
   location: string
   image: string
   category: string
+  onClick?: () => void
+  priority?: boolean
 }
 
 export function ProjectCard({
   title,
   description,
   tags,
-  slug,
   year,
   location,
   image,
   category,
+  onClick,
+  priority = false,
 }: ProjectCardProps) {
   return (
-    <Link
-      href={`/projects/${slug}`}
-      className="glow-card group block rounded-sm border border-border bg-card overflow-hidden shadow-sm"
+    <button
+      type="button"
+      onClick={onClick}
+      className="glow-card group flex flex-col rounded-sm border border-border bg-card overflow-hidden shadow-sm text-left w-full h-full"
     >
       <div className="img-zoom relative aspect-[4/3]">
         <Image
@@ -35,6 +37,8 @@ export function ProjectCard({
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={priority}
+          loading={priority ? "eager" : "lazy"}
         />
         <div className="absolute inset-0 bg-foreground/5 group-hover:bg-foreground/0 transition-colors duration-500" />
         <div className="absolute top-4 left-4">
@@ -48,25 +52,23 @@ export function ProjectCard({
           </div>
         </div>
       </div>
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex items-center gap-3">
-            <span className="text-[10px] font-mono text-muted-foreground tracking-[0.2em] uppercase">
-              {year}
-            </span>
-            <span className="text-border">|</span>
-            <span className="text-[10px] font-mono text-muted-foreground tracking-[0.15em]">
-              {location}
-            </span>
-          </div>
+      <div className="flex flex-col flex-1 p-6">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-[10px] font-mono text-muted-foreground tracking-[0.2em] uppercase">
+            {year}
+          </span>
+          <span className="text-border">|</span>
+          <span className="text-[10px] font-mono text-muted-foreground tracking-[0.15em]">
+            {location}
+          </span>
         </div>
         <h3 className="text-xl font-serif font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
           {title}
         </h3>
-        <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+        <p className="text-sm text-muted-foreground leading-relaxed mb-5 line-clamp-3">
           {description}
         </p>
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-1.5 mt-auto">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -77,6 +79,6 @@ export function ProjectCard({
           ))}
         </div>
       </div>
-    </Link>
+    </button>
   )
 }
