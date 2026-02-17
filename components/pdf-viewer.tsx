@@ -25,19 +25,26 @@ export function PdfViewer({ src }: PdfViewerProps) {
         setLoading(true)
         setError(null)
 
+        console.log("[v0] Loading PDF from:", src)
+
         const pdfjsLib = await import("pdfjs-dist")
         pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`
 
+        console.log("[v0] pdfjs version:", pdfjsLib.version)
+
         const loadingTask = pdfjsLib.getDocument(src)
         const pdfDoc = await loadingTask.promise
+
+        console.log("[v0] PDF loaded successfully. Pages:", pdfDoc.numPages)
 
         if (!cancelled) {
           setPdf(pdfDoc)
           setTotalPages(pdfDoc.numPages)
           setCurrentPage(1)
         }
-      } catch (err) {
+      } catch (err: any) {
         if (!cancelled) {
+          console.log("[v0] PDF load error for src:", src, "Error:", err?.message || err)
           setError("Failed to load PDF")
           console.error("PDF load error:", err)
         }
@@ -59,12 +66,17 @@ export function PdfViewer({ src }: PdfViewerProps) {
       if (!pdf || !canvasRef.current) return
 
       try {
+        console.log("[v0] Rendering page:", pageNum, "scale:", scale)
         const page = await pdf.getPage(pageNum)
         const viewport = page.getViewport({ scale })
+        console.log("[v0] Viewport:", viewport.width, "x", viewport.height)
         const canvas = canvasRef.current
         const context = canvas.getContext("2d")
 
-        if (!context) return
+        if (!context) {
+          console.log("[v0] No canvas context!")
+          return
+        }
 
         canvas.height = viewport.height
         canvas.width = viewport.width
@@ -73,7 +85,9 @@ export function PdfViewer({ src }: PdfViewerProps) {
           canvasContext: context,
           viewport: viewport,
         }).promise
-      } catch (err) {
+        console.log("[v0] Page rendered successfully")
+      } catch (err: any) {
+        console.log("[v0] Page render error:", err?.message || err)
         console.error("Page render error:", err)
       }
     },
