@@ -176,7 +176,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <a
-                    href="/resume.pdf"
+                    href="/Calvin_Mlcek_Resume.pdf"
                     download
                     className="inline-flex items-center justify-center gap-2 rounded-sm border border-border bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 transition-colors duration-200"
                   >
