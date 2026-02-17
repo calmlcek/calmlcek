@@ -34,7 +34,7 @@ const projects = [
     description:
       "As a second-year studio project, Hidden Grounds is designed as an ADU that combines a café and speakeasy within a compact footprint, emphasizing conceptual thinking and spatial experience over complex technical systems. The project reflects an intermediate level of study by exploring program layering, atmosphere, and scale to show how a small structure can support social gathering and community interaction.",
     tags: ["ADU", "Housing", "Urban", "Residental", "Commercial", "Rhino", "D5 Render"],
-    pdf: "/pdfs/hidden-grounds.pdf.pdf",
+    pdf: "/pdfs/hidden-grounds.pdf",
     year: "2025",
     location: "Design Studio III",
     image: "/images/project-3.jpg",
@@ -67,7 +67,7 @@ const projects = [
     description:
       "Co-Linear Constructions is a first-year design study that investigates how aligned and extended elements generate spatial order through shared directional axes. By organizing planes and volumes along continuous trajectories, the project explores how linear relationships create rhythm, continuity, and subtle variation, transforming simple geometric alignments into structured spatial experiences.",
     tags: ["Study Model", "Modular", "Linear", "Co-Linear"],
-    pdf: "/pdfs/co-linear-constructions.pdf",
+    pdf: "/pdfs/co-linear-constructs.pdf",
     year: "2023",
     location: "ARCH Seeking & Making",
     image: "/images/project-6.jpg",
