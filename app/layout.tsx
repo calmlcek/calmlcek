@@ -23,10 +23,7 @@ export const metadata: Metadata = {
   title: "Calvin Mlcek - Architecture Portfolio",
   description:
     "Undergraduate architecture portfolio showcasing studio projects, design work, and spatial exploration.",
-  icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
-  },
+
 }
 
 export const viewport: Viewport = {
