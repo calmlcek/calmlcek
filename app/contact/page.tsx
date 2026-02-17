@@ -164,19 +164,8 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                     Education, Professional Experience, Activities & Involvement, and Technical Skills.
                   </p>
-                  <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
-                    <div className="text-center px-4">
-                      <FileText className="h-8 w-8 text-muted-foreground/30 mx-auto mb-3" />
-                      <p className="text-xs text-muted-foreground">
-                        Resume PDF will appear here
-                      </p>
-                      <p className="text-[10px] text-muted-foreground/50 mt-1 font-mono">
-                        Upload to /public/resume.pdf
-                      </p>
-                    </div>
-                  </div>
                   <a
-                    href="/resume.pdf"
+                    href="/Calvin_Mlcek_Resume.pdf"
                     download
                     className="inline-flex items-center justify-center gap-2 rounded-sm border border-border bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 transition-colors duration-200"
                   >
@@ -204,19 +193,8 @@ export default function ContactPage() {
                     A curated selection of studio projects, personal projects,
                     design-build work, and process documentation.
                   </p>
-                  <div className="flex-1 flex items-center justify-center rounded-sm border border-dashed border-border bg-secondary/30 min-h-[160px] mb-6">
-                    <div className="text-center px-4">
-                      <FileText className="h-8 w-8 text-muted-foreground/30 mx-auto mb-3" />
-                      <p className="text-xs text-muted-foreground">
-                        Portfolio PDF will appear here
-                      </p>
-                      <p className="text-[10px] text-muted-foreground/50 mt-1 font-mono">
-                        Upload to /public/portfolio.pdf
-                      </p>
-                    </div>
-                  </div>
                   <a
-                    href="/portfolio.pdf"
+                    href="/Calvin_Mlcek_Portfolio.pdf"
                     download
                     className="inline-flex items-center justify-center gap-2 rounded-sm border border-border bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 transition-colors duration-200"
                   >

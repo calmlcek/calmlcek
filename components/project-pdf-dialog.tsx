@@ -8,6 +8,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog"
 import { FileText } from "lucide-react"
+import { PdfViewer } from "@/components/pdf-viewer"
 
 interface ProjectPdfDialogProps {
   open: boolean
@@ -38,11 +39,7 @@ export function ProjectPdfDialog({
 
         <div className="flex-1 min-h-0 overflow-hidden">
           {pdfPath ? (
-            <iframe
-              src={pdfPath}
-              className="w-full h-full border-0"
-              title={`PDF document for ${projectTitle}`}
-            />
+            <PdfViewer src={pdfPath} />
           ) : (
             <div className="flex flex-col items-center justify-center h-full gap-3 px-8 text-center">
               <FileText className="h-10 w-10 text-muted-foreground/40" />
