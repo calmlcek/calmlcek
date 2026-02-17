@@ -34,7 +34,7 @@ const projects = [
     description:
       "As a second-year studio project, Hidden Grounds is designed as an ADU that combines a café and speakeasy within a compact footprint, emphasizing conceptual thinking and spatial experience over complex technical systems. The project reflects an intermediate level of study by exploring program layering, atmosphere, and scale to show how a small structure can support social gathering and community interaction.",
     tags: ["ADU", "Housing", "Urban", "Residental", "Commercial", "Rhino", "D5 Render"],
-    pdf: "/pdfs/vertical-neighborhood.pdf",
+    pdf: "/pdfs/hidden-grounds.pdf.pdf",
     year: "2025",
     location: "Design Studio III",
     image: "/images/project-3.jpg",
@@ -45,18 +45,18 @@ const projects = [
     description:
       "Hidden Cohabitation is a third-year studio housing project that explores shared living through the design of a dormitory for both half-scale and double-scale inhabitants, prioritizing spatial strategy alongside developing technical awareness. The project reflects a more advanced level of study by integrating material decisions, structure, and program organization to examine how architecture can accommodate multiple scales of life within one cohesive system.",
     tags: ["Dual-Scale", "Mixed-Use", "residential", "Dormatory", "Rhino", "D5 Render"],
-    pdf: "/pdfs/adaptive-reuse-textile-mill.pdf",
+    pdf: "/pdfs/hidden-cohabitation.pdf",
     year: "2025",
     location: "Design Studio III",
     image: "/images/project-4.jpg",
     category: "Residential",
   },
   {
-    title: "Liminal Threashold",
+    title: "Liminal Center",
     description:
       "Liminal Threshold is a second-year visitor center project that explores architecture as a moment of transition between landscape and visitor experience. Through layered planes and controlled circulation, the design frames arrival as a spatial sequence, using form and alignment to guide movement while creating moments of pause, orientation, and connection to place.",
     tags: ["Community", "Liminal", "Rhino", "V-Ray"],
-    pdf: "/pdfs/timber-pavilion.pdf",
+    pdf: "/pdfs/liminal-center.pdf",
     year: "2024",
     location: "Design Studio I",
     image: "/images/project-5.jpg",
@@ -67,7 +67,7 @@ const projects = [
     description:
       "Co-Linear Constructions is a first-year design study that investigates how aligned and extended elements generate spatial order through shared directional axes. By organizing planes and volumes along continuous trajectories, the project explores how linear relationships create rhythm, continuity, and subtle variation, transforming simple geometric alignments into structured spatial experiences.",
     tags: ["Study Model", "Modular", "Linear", "Co-Linear"],
-    pdf: "/pdfs/eco-housing-prototype.pdf",
+    pdf: "/pdfs/co-linear-constructions.pdf",
     year: "2023",
     location: "ARCH Seeking & Making",
     image: "/images/project-6.jpg",
